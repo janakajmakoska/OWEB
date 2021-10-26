@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+ <title>Personal Blog</title>
+ 
+ </head>
+ <body>
+     <p><strong><em>Home</em></strong></p>
+     <p><strong><em>Favourite things</em></strong></p>
+     <p><strong><em>Gallery</em></strong></p>
+     <p><strong><em>Blog</em></strong></p>
+     <p><strong><em>Poll</em></strong></p>
+     <p><strong><em>Contact</em></strong></p>
+
+     </body>
+</html>
