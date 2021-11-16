@@ -3,114 +3,350 @@
 <head>
     <meta charset = "utf-8">
  <title>Personal Blog</title>
+ <link rel="stylesheet" href="./css.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+ 
  <style>
      body{
-         background: url(https://lea.verou.me/ft2010/img/darker_wood.jpg),100%,100%;
+         background-color:  rgb(245, 206, 232);
      }
    h1{
-       color: rgb(190, 211, 177);
+       color: black;
        size: 500%;
        position: absolute;
        left: 500px;
        
    }
    p{
-       color:white;
+       color:black;
    }
    h2{
-       color:rgb(89, 226, 10);
+       color:black;
        size:300%;
+       
+       
    }
    li{
-       color: white;
+       color: black;
+    
+       
    }
+   
    h3{
-       color: white;
+       color: black;
+       
+       
    }
+   ul{
+       background-color:whitesmoke;
+   }
+   div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.container{
+  width: 500px;
+  text-align: right;
+  box-shadow: 0 5px 15px #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+.container1{
+  width: 500px;
+  text-align: right;
+  box-shadow: 0 5px 15px #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+.container2{
+  width: 500px;
+  text-align: right;
+  box-shadow: 0 5px 15px #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+.container3{
+  width: 500px;
+  text-align: right;
+  box-shadow: 0 5px 15px #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+#input{
+  width: 100%;
+  height: 40px;
+  background: none;
+  font-size: 15px;
+  color:#111;
+  border-bottom: 1px solid #fff;
+}
+#input:focus{
+  border-bottom: 2px solid #fff;
+}
+#input1{
+  width: 100%;
+  height: 40px;
+  background: none;
+  font-size: 15px;
+  color:#111;
+  border-bottom: 1px solid #fff;
+}
+#input1:focus{
+  border-bottom: 2px solid #fff;
+}
+#input2{
+  width: 100%;
+  height: 40px;
+  background: none;
+  font-size: 15px;
+  color:#111;
+  border-bottom: 1px solid #fff;
+}
+#input2:focus{
+  border-bottom: 2px solid #fff;
+}
+#input3{
+  width: 100%;
+  height: 40px;
+  background: none;
+  font-size: 15px;
+  color:#111;
+  border-bottom: 1px solid #fff;
+}
+#input4:focus{
+  border-bottom: 2px solid #fff;
+}
+
  </style>
  </head>
  <body>
-    <h1>Welcome to my web page!</h1><br>
-    <br><br>
+     <br><br>
     <hr size="4" width="100%" color="white"><br>
     <br><br>
     <ul class = "tekst">
-      <h3> <a class = "lista"><a class = "nodec" href="#Home">Home </a>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a> <a class = "lista"><a class = "nodec" href="#Favorites">Favourite things</a>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a> <a class = "lista"><a class = "nodec" href="#Galery">Gallery</a></a> <a class = "lista"><a class = "nodec" href="#Blog">Blog</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</a> <a class = "lista"><a class = "nodec" href="#Survey">Survey</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>  <a class = "lista"><a class = "nodec" href="#Contact">Contact </a>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></h3>>
+      <h3>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a class = "lista"><a class = "nodec" href="#Home">Home </a>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a> <a class = "lista"><a class = "nodec" href="#Favorites">Favourite things</a>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a> <a class = "lista"><a class = "nodec" href="#Galery">Gallery</a>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a> <a class = "lista"><a class = "nodec" href="#Blog">Blog</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</a> <a class = "lista"><a class = "nodec" href="#Survey">Survey</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>  <a class = "lista"><a class = "nodec" href="#Contact">Contact </a>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></h3>
     </ul>
-    <br>
+    <br><br>
+    <hr size="4" width="100%" color="white"><br>
+    <br><br>
+    
+    <h1><pre>Welcome to my web page!</pre></h1><br>
     <hr size="4" width="100%" color="white"><br>
     <div>
-         <h2 id = "Home">Home</h2>
+        <ul><h2 id = "Home">Home</h2>
          <p><em>Hi, my name is Jana Kajmakoska, I'm 21 years old from Ohrid.</em> </p>
-         <p><em>I'm currently studying Computer Technology and Engineering at the Faculty of Electrical Engineering & Information Technologies in Skopje.</em>></p>
-         <img src="123.jpg" alt="Photo" style="width:200px;height:250px;">
-         
+         <p><em>I'm currently studying Computer Technology and Engineering at the Faculty of Electrical Engineering & Information Technologies in Skopje.</em></p>
+         <img src="123.jpg" alt="Photo" style="width:200px;height:250px;" >
+        </ul>     
    </div><br>
    <hr size="4" width="100%" color="white"><br>
 
-   <div>
+   <ul><div>
        <h2 id = "Favorites">Favorites</h2>
-       <p>My favorite hobbies: </p>
-         <ul>
-            <li><em>I like watching movies and series. My favorite thinks to watch are crimi and mystery.
-                I can recommend you some good series <a class="klasa" href="https://www.imdb.com/title/tt2741602/?ref_=nv_sr_srsg_3">The Black List</a>, <a class="klasa" href="https://www.imdb.com/title/tt4474344/?ref_=nv_sr_srsg_0">Blindspot</a>, 
-                <a class="klasa" href="https://www.imdb.com/title/tt4524056/?ref_=fn_al_tt_1">Vis a vis</a></em>
-            </li> 
-           <li>
-           <em> I do not play sports and I do not have a favorite sport, I can separate that sometimes I like walks by the lake or in the mountains.</em>
-           </li>
-       </ul>
+      <div class="gallery">
+        <a target="_blank" href="hranaa.jpg">
+          <img src="hranaa.jpg" alt="Photo" style="width:200px;height:250px;">
+        </a>
+        <div class="desc">Favorite food</div>
+      </div>
+     
+      <div class="gallery">
+        <a target="_blank" href="serijaa.jpg">
+          <img src="serijaa.jpg" alt="Photo" style="width:200px;height:250px;">
+        </a>
+        <div class="desc">Favorite series</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="place.jpg">
+          <img src="place.jpg" alt="Photo " style="width:200px;height:250px;">
+        </a>
+        <div class="desc">Favorite place</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="hobii.jpg">
+          <img src="hobii.jpg" alt="Photo" style="width:200px;height:250px;">
+        </a>
+        <div class="desc">Favorite hobi</div>
+      </div></ul>
+        
 
    </div> <br>
    <hr size="4" width="100%" color="white"><br>
 
-   <div>
-       <h2 id = "Galery">Gallery</h2>
+   <div><ul> 
+       <h2 id = "Galery">Gallery</h2></ul>
+
        <div class="sliki"> 
-       <img src="2.jpg" alt="Photo" style="width:250px;height:350px;"><br>
-       <input type="submit" value="Like">
-       <textarea name = "comments" style="margin-left: 9%;  resize:none;" rows = "1" cols="25"></textarea></label>
-       <input type="submit" value="Submit comment"><br>
+        
+       <img src="2.jpg" id="2" alt="Photo" style="width:250px;height:350px;"><br>
+       
+       <button class="like_btn2">
+        <span id="icon2"><i class="far fa-thumbs-up"></i></span>
+        <span id="count2">0 </span> Like
+        </button>
+       <div class="container">
+         <input type="text" id="input" placeholder="write your comment here...">
+         
+         <button type="button" name="button" id="comment">comment</button>
+
+        <!---<div class="box-container">
+           <div class="box">
+             --> 
+            <input class="content" id="content">
+<!---
+           </div>
+          <button type="button" name="button" id="delete">delete</button>
+         </div> 
+         -->  
+       </div>
+      
        </div><br>
 
-       <div class = "sliki">
-       <img src="1.jpg" alt="Photo" style="width:250px;height:350px;"><br>
-       <input type="submit" value="Like">
-       <textarea name = "comments" style="margin-left: 9%;  resize:none;" rows = "1" cols="25"></textarea></label>
-       <input type="submit" value="Submit comment"><br>
+     <div class = "sliki">
+        
+       <img src="1.jpg" alt="Photo" id="1" style="width:250px;height:350px;"><br>
+        
+       <button class="like_btn1">
+        <span id="icon1"><i class="far fa-thumbs-up"></i></span>
+        <span id="count1">0 </span> Like
+        </button>
+       
+
+       <div class="container1">
+        <input type="text" id="input1" placeholder="write your comment here...">
+        
+        <button type="button" name="button" id="comment1">comment</button>
+      
+
+        <input class="content1" id="content1">
+
+       </div>
+
        </div><br>
 
+
        <div class = "sliki">
+        
         <img src="321.jpg" alt="Photo" style="width:250px;height:350px;"><br>
-        <input type="submit" value="Like">
-        <textarea name = "comments" style="margin-left: 9%;  resize:none;" rows = "1" cols="25"></textarea></label>
-        <input type="submit" value="Submit comment"><br>
+        
+        <button class="like_btn321">
+          <span id="icon3"><i class="far fa-thumbs-up"></i></span>
+          <span id="count3">0 </span> Like
+          </button>
+
+          <div class="container2">
+            <input type="text" id="input2" placeholder="write your comment here...">
+            
+            <button type="button" name="button" id="comment2">comment</button>
+          
+    
+            <input class="content2" id="content2">
+    
+           </div>
+    
         </div><br>
 
        <div class = "sliki">
-       <img src="http://hd.wallpaperswide.com/thumbs/rustic_cottage_lake_mountain_winter_snow-t2.jpg" alt="Photo" style="width:500px;height:350px;"><br>
-       <input type="submit" value="Like">
-       <textarea name = "comments" style="margin-left: 9%; resize:none;" rows = "1" cols="25"></textarea></label>
-       <input type="submit" value="Submit comment"><br>
+       <img src="snow.jpg" alt="Photo" style="width:500px;height:350px;"><br>
+        
+       <button class="like_btnsnow">
+        <span id="icon4"><i class="far fa-thumbs-up"></i></span>
+        <span id="count4">0 </span> Like
+        </button>
+            
+
+        <div class="container3">
+          <input type="text" id="input3" placeholder="write your comment here...">
+          
+          <button type="button" name="button" id="comment3">comment</button>
+        
+  
+          <input class="content3" id="content3">
+  
+         </div>
+       
        </div><br>
-
-   </div><br>
+    
+      </div><br>
    <hr size="4" width="100%" color="white"><br>
-   <div>
-       <h2 id = "Blog">Blog</h2>
-      <p> <label>Write your text here:<br>
-       <textarea name = "comments" rows = "8" cols="50"></textarea></label>
-       <input type="datetime-local" name = "time">
-      </p>
+   <div><ul> 
+       <h2 id = "Blog">Blog</h2></ul>
+       <div class="gallery">
+        <a target="_blank" href="v.jpg">
+          <img src="v.jpg" alt="Photo" style="width:200px;height:250px;">
+        </a>
+        
+      </div>
      
-      <form action = "Proektna Jana.html">
-       <input type="submit" value="Submit text">
-     </form>
-   </div> <br>
+      <div class="gallery">
+        <a target="_blank" href="z.jpg">
+          <img src="z.jpg" alt="Photo" style="width:200px;height:250px;">
+        </a></div>
+        
+      
+      <div class="gallery">
+        <a target="_blank" href="b.jpg">
+          <img src="b.jpg" alt="Photo " style="width:200px;height:250px;">
+        </a></div>>
+       
+      
+      <div class="gallery">
+        <a target="_blank" href="g.jpg">
+          <img src="g.jpg" alt="Photo" style="width:200px;height:250px;">
+        </a>
+        </div>
+      <div class="gallery">
+        <a target="_blank" href="i.jpg">
+          <img src="i.jpg" alt="Photo" style="width:200px;height:250px;">
+        </a>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="d.jpg">
+            <img src="d.jpg" alt="Photo" style="width:200px;height:250px;">
+          </a>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="e.jpg">
+              <img src="e.jpg" alt="Photo" style="width:200px;height:250px;">
+            </a>
+            </div>
+
+            <div class="container4">
+              <input type="text" id="input4" placeholder="write your text here...">
+              
+              <button type="button" name="button" id="comment4">Submit</button>
+              <input class="content4" id="content4">
+      
+              
+      
+             </div>
+      <div>
+       <input type="datetime-local" name = "time">
+     </div>
+      
+     </div> <br>
    <hr size="4" width="100%" color="white"><br>
 
-   <div>
-       <h2 id = "Survey">Survey</h2>
+   <div> 
+    <ul><h2 id = "Survey">Survey</h2></ul>
       <p> <label for="name">Enter your name: </label><br>
  <input type="text" name="name" value=" "><br> </p>
  <p><label for="email">Enter your email: </label><br>
@@ -128,13 +364,17 @@
    <form action = "Proektna Jana.html">
        <input type="submit" value="Submit suggestion">
      </form>
-   </div> <br>
+    
+    </div> <br>
    <hr size="4" width="100%" color="white"><br>
 
    <div>
-       <h2 id = "Contact">Contact</h2>
-       <p>If you want to contact me, <a href="mailto:kajmakoskajana@gmail.com">Send email</a>
-         
-
+    
+    <ul><h2 id = "Contact">Contact</h2></ul>
+       <p>If you want to contact me, <a href="mailto:kajmakoskajana@gmail.com">Send email</a></p>
+        <a href="https://www.instagram.com/_kajmakoska/"><img src="insta.png" alt="Photo" style="width:42px;height:42px;"></a> 
+        <a href="https://www.facebook.com/jana.kajmakoska.9/"><img src="fb.png" alt="Photo" style="width:42px;height:42px;"></a> 
+        
+        <script src="./java.js"></script>
 </body>
 </html>
