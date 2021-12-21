@@ -66,7 +66,6 @@ likeBtn4.addEventListener("click" , () => {
     }
 });
 
-
 let comment = document.querySelector("#input").value;
 let commentBtn = document.querySelector("#comment");
 let content = document.querySelector(".content");
@@ -75,7 +74,6 @@ commentBtn.addEventListener("click" , () => {
     document.getElementById("content").value = document.getElementById("input").value;
     document.getElementById("input").value = "";
 });
-
 let comment1 = document.querySelector("#input1").value;
 let commentBtn1 = document.querySelector("#comment1");
 let content1 = document.querySelector(".content1");

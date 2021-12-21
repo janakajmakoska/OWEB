@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
     <meta charset = "utf-8">
  <title>Personal Blog</title>
  <link rel="stylesheet" href="./css.css"/>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
- 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#Input").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#Seria tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value)  > -1)
+    });
+  });
+});
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#seria tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) == -1)
+    });
+  });
+});
+</script>
  <style>
      body{
          background-color:  rgb(245, 206, 232);
@@ -132,6 +150,21 @@ div.desc {
 #input4:focus{
   border-bottom: 2px solid #fff;
 }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #a09191;
+}
 
  </style>
  </head>
@@ -186,7 +219,62 @@ div.desc {
         </a>
         <div class="desc">Favorite hobi</div>
       </div></ul>
-        
+      <hr size="4" width="100%" color="white"><br>
+      <h2>Листа со омилени серии</h2>
+      <p>Пребарувај низ листата со серии</p>  
+      <input id="Input" type="text" placeholder="Search..">
+      <br><br>
+      
+      <table>
+        <thead>
+        <tr>
+          <th>Серија</th>
+          <th>Режисер</th>
+        </tr>
+        </thead>
+        <tbody id="Seria">
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt2741602/?ref_=nv_sr_srsg_1">The Black List</a></td>
+          <td>Jon Bokenkamp</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0">Lucifer</a></td>
+          <td>Tom Kapinos</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt0455275/?ref_=nv_sr_srsg_0">Prison Break</a></td>
+          <td>Paul T.Scheuring</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt4474344/?ref_=nv_sr_srsg_0">Blindspot</a></td>
+          <td>Martin Gero</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt4428122/?ref_=nv_sr_srsg_0">Quantico</a></td>
+          <td>Joshua Safran</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1">La casa de papel</a></td>
+          <td>Alex Pina</td>
+        </tr>
+        <tr>
+          <td><a href ="https://www.imdb.com/title/tt7134908/?ref_=nv_sr_srsg_0">Elite</a> </td>
+          <td>Dario Madrona, Carlos Montero</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt7335184/?ref_=fn_al_tt_1">You</a></td>
+          <td>Greg Berlanti, Sera Gamble</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt2234222/?ref_=nv_sr_srsg_3">Orphan Black</a></td>
+          <td>Kim Coghill, Andrew De Angelis, Jeff Detsky </td>
+        </tr>
+        <tr>
+          <td><a href="https://www.imdb.com/title/tt2357547/?ref_=nv_sr_srsg_3">Jessica Jones </a></td>
+          <td>Melissa Rosenberg</td>
+        </tr>
+        </tbody>
+      </table>
 
    </div> <br>
    <hr size="4" width="100%" color="white"><br>
@@ -202,24 +290,19 @@ div.desc {
         <span id="icon2"><i class="far fa-thumbs-up"></i></span>
         <span id="count2">0 </span> Like
         </button>
-       <div class="container">
-         <input type="text" id="input" placeholder="write your comment here...">
-         
-         <button type="button" name="button" id="comment">comment</button>
-
-        <!---<div class="box-container">
-           <div class="box">
-             --> 
-            <input class="content" id="content">
-<!---
-           </div>
-          <button type="button" name="button" id="delete">delete</button>
-         </div> 
-         -->  
-       </div>
-      
-       </div><br>
-
+        <div class="container">
+          <input type="text" id="input" placeholder="write your comment here...">
+          
+          <button type="button" name="button" id="comment">comment</button>
+        
+  
+          <input class="content" id="content">
+  
+         </div>
+  
+         </div><br>
+  
+       
      <div class = "sliki">
         
        <img src="1.jpg" alt="Photo" id="1" style="width:250px;height:350px;"><br>
@@ -375,6 +458,7 @@ div.desc {
         <a href="https://www.instagram.com/_kajmakoska/"><img src="insta.png" alt="Photo" style="width:42px;height:42px;"></a> 
         <a href="https://www.facebook.com/jana.kajmakoska.9/"><img src="fb.png" alt="Photo" style="width:42px;height:42px;"></a> 
         
-        <script src="./java.js"></script>
+        
+ <script src="java.js"></script>
 </body>
 </html>
